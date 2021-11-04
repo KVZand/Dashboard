@@ -1,0 +1,12 @@
+CREATE TABLE products (
+  productID SERIAL PRIMARY KEY,
+  productName (VARCHAR 255) not null,
+  supplierID INTEGER not null,
+  categoryID INTEGER not null,
+  quantityPerUnit (VARCHAR 255) not null,
+  unitPrice NUMERIC not null,
+  unitsInStock INTEGER,
+  unitsOnOrder INTEGER,
+  reorderLevel INTEGER,
+  discontinued BOOL,
+),
